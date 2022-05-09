@@ -9,11 +9,11 @@
 
 #include <microros_transports.h>
 
-#include <arpa/inet.h>
+#include <posix/arpa/inet.h>
 #include <unistd.h>
 #include <string.h>
 #include <errno.h>
-#include <netdb.h>
+#include <posix/netdb.h>
 
 bool zephyr_transport_open(struct uxrCustomTransport * transport){
     zephyr_transport_params_t * params = (zephyr_transport_params_t*) transport->args;
