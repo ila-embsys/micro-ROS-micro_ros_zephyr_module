@@ -95,7 +95,17 @@ $(COMPONENT_PATH)/micro_ros_src/src:
 	touch src/rcl/rcl_yaml_param_parser/COLCON_IGNORE; \
 	touch src/rcl_logging/rcl_logging_log4cxx/COLCON_IGNORE; \
     touch src/rcl_logging/rcl_logging_spdlog/COLCON_IGNORE; \
-    touch src/rcl_interfaces/test_msgs/COLCON_IGNORE;
+    touch src/rcl_interfaces/test_msgs/COLCON_IGNORE; \
+	touch src/rcl_interfaces/rosgraph_msgs/COLCON_IGNORE; \
+	touch src/rcl_interfaces/statistics_msgs/COLCON_IGNORE; \
+	touch src/common_interfaces/sensor_msgs/COLCON_IGNORE; \
+	touch src/ros2_tracing/tracetools_trace/COLCON_IGNORE; \
+	touch src/common_interfaces/stereo_msgs/COLCON_IGNORE; \
+	touch src/common_interfaces/geometry_msgs/COLCON_IGNORE; \
+	touch src/common_interfaces/shape_msgs/COLCON_IGNORE; \
+	touch src/common_interfaces/nav_msgs/COLCON_IGNORE; \
+	touch src/common_interfaces/visualization_msgs/COLCON_IGNORE; \
+	touch src/common_interfaces/trajectory_msgs/COLCON_IGNORE
 
 $(COMPONENT_PATH)/micro_ros_src/install: configure_colcon_meta configure_toolchain $(COMPONENT_PATH)/micro_ros_dev/install $(COMPONENT_PATH)/micro_ros_src/src
 	cd $(UROS_DIR); \
