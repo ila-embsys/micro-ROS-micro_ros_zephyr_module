@@ -1,0 +1,3 @@
+[submodule "modules/libmicroros"]
+	path = modules/libmicroros
+	url = https://github.com/ila-embsys/micro-ROS-libmicroros.git
